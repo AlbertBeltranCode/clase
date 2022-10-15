@@ -1,0 +1,110 @@
+.headerMain{
+    position: fixed;
+    width: 100%;
+    height: 118px;
+    background-color: #5C415D;
+    margin: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.navigationMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigationBar{
+    list-style-type: none;
+    padding: 10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.navigationBar a{
+    text-decoration: none;
+    color: #F6F7EB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8px;
+    
+} 
+.navigationBar li{
+    margin: 5px;
+    border: 0.5px solid black;
+    list-style-position:inside;
+}
+.webLogo{
+    width: 100px;
+    display: flex;
+    margin-left: -20px;
+    
+}
+.search{
+    width: 70px;
+    display: flex;
+}
+
+.body{
+    margin: 0;
+    min-height: 100vh;
+
+}
+.bodyMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.contenedorImg{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+}
+.Image{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tituloH1{
+    color:white;
+    z-index: 1;
+
+}
+/*Mobile*/
+@media screen and (min-width: 560px) {
+    .navigationBar a {
+        font-size: 12px;
+    
+    }
+}
+/*Tablet*/
+@media screen and (min-width: 710px) {
+.navigationBar a {
+    font-size: 13px;
+}
+.navigationBar li {
+    margin: 10px;
+}
+}
+/*Desktop*/
+@media screen and (min-width: 1265px) {
+    .navigationBar a {
+        font-size: 20px;
+    
+    }
+    .navigationBar li {
+        margin: 30px;
+    }
+    .navigationBar{
+        padding: 0px;
+    }
+
+}
